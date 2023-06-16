@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  ...Mauricio Alberto Mendoza...
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="..\Paginaparcial\logo1.png">
+	<title>Formulario de Contacto </title>
+
+</head>
+
+<body bgcolor="#dde$" style="color: white">
+    <center>
+    <height="100" width="100">
+    <h1>Deja tus dudas o consultas</h1>
+    </center>
+    <!--Elaboracion del formulario-->
+    <form action="recibido.html" method="POST" target="_blank">
+     <fieldset>
+      <legend>Datos Personales</legend><br>
+      <label for="nombre">Nombre Completo</label>
+      <input type="text" name="nombre" size="40" required>
+      <br><br>
+      <label for="correo">Correo Personal</label>
+      <input type="email" name="correo" size="40" placeholder="Morrismendoza905@gmail.com" readonly required>
+      <br><br>
+      <label for="telefono">Telefono de contacto</label>
+      <input type="telefono" id="email" name="contacto" placeholder="0000-000" required size="9" maxlength="9">
+      <br><br>
+     </fieldset>
+     <fieldset>
+      <legend>Mensaje</legend>
+      <label for="Asunto">Asunto</label>
+      <input type="text" name="asunto" size="40" required="">
+      <br><br>
+      <label for="mensaje">Mensaje</label><br>
+      <textarea id="mensaje" cols="60" rows="20" required placeholder="Escribe aqui tu mensaje" maxlength="100"></textarea>
+      <br><br>
+      <label for="tipo">Seleciones categoria</label>
+      <select>
+      	<option>Consulta</option>
+      	<option>Queja</option>
+      	<option>Duda</option>
+      	<option>Sugerencia</option>
+      	<option>Opinión</option>
+      </select>
+     </fieldset>
+    
+      <br><br> 
+      <input type="hidden" id="usuario" name="usuario" value="12345"> 
+     
+      
+      <input type="submit" id="enviar" name="enviar" value="Enviar Mensaje">
+      <input type="reset" id="borrar" name="borrar" value="Borrar datos"> 
+</form>
+</body>
+</html>

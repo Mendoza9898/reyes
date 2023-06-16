@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>RESTAURANTE EL MIRADOR</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="..\Paginaparcial\logo1.png">
+</head>
+<body bgcolor="#22dde">
+	
+	
+ <center>
+   <table>
+ 		<tr>
+     		 <h1><a name="Inicio">RESTAURANTE EL GRAN MIRADOR"</a></h1></td><!--Esta linea crea una fila  que abarca 5 celda -->
+
+     	     <tr>
+     	     	<td><img src="mail.png" width="20" height="20"><em><strong>morrismendoza905@gmail.com</strong></em></td>
+     	     	<td></td>
+     	     	<td><img src="phone.png" width="20" height="20"><em><strong>Tel.:2245-5252</strong></em></td>
+     	     	<td>       </td>
+     	     	<td><img src="location.png" width="20" height="20"><em><strong>Av. Sur Barrio el calvario #216, Ahuachapan</strong></em></td>
+     	     </tr>
+            </tr>
+    </table>
+</center>
+<hr>
+
+	<nav id="menu">
+   		<ul>
+   			<li><a href="#">Inicio</a></li>
+        	<li><a href="..\Paginaparcial\catalogo.html">Nuestros Productos</a>
+           		<ul>
+           			<li><a href="#">Gourmet</a></li>
+           			<li><a href="#">Novedades</a></li>
+           		</ul>
+        	</li>
+        	<li><a href="#nosotros">Acerca de nosotros</a></li>
+        	<li><a href="..\Paginaparcial\contactanos.html">Contactos</a></li>
+   		</ul>
+    </nav> 
+
+    <br><br><br>
+    <hr>
+    <center><h1><a name="nosotros">NUESTRA HISTORIA</a></h1><img src="casa.jpeg"></center>
+    <p>Nuestro restaurante fue creado con mucho amor y dedicacion para todo el pueblo salvadoreño para que disfruten de las delicias de nuestras tardes.
+    Puedes visitarnos para nosotros sera un placer servirte  a ti y a tu familia. </p>
+
+    <p>Puedes disfrutar de los platillos exquisitos que a tu paladar le encantará <em>EL Salvador</em>Todo comienza de ese toque especial que en nuestras manos esta para complacerte y hacer sentir ese sabor que no olvidaras <strong>Mamá Nila</strong><br>       Mama Nila prepara con sus manos lo mas delicioso, la sopa exquisita de gallina india que te dejará la sensacion se regresar por más, los clientes buscan ese plato que los hace sudar de ricura</p> 
+
+    <p>Cada uno de sus platillos son elaborados con altos estandares de calidad para que cada uno de sus clientes quede satsifecho y complacido con los sabores.   Lo que es principalmente el objetivo, pues cada uno de estos comenzales es un ente multiplicador, promoviendo asi el restaurantes con amigos, familiares y conocidos.</p>
+
+<br><br>
+<hr>
+    <center>
+    	<h1>QUIERES CONOCER SOBRE NUESTROS PLATOS</h1>
+        <a href="https://www.youtube.com/watch?v=axTPYQRh1U8"><img src="..\Paginaparcial\imagen12.jpeg"></a>
+     </center>
+
+     <div class="floating-element">
+  	<a href="https://www.facebook.com/brasasSV/?locale=es_LA" target="_blank"><img src="descarga.png"></a>
+  	<p>Será un gusto atenderte<br>
+  	    Visítanos....!!!!</p>	
+  </div>
+</body>
+
+<!--Codigo css para el estilo del menu-->
+<style type="text/css">
+	
+	#menu ul{
+		list-style: none;
+		margin: 0;
+		padding: 80px;
+	}
+
+	#menu ul li{
+		background-color: black;
+	}
+    
+    #menu ul a{
+    	display: block;;
+    	color: #fff;
+    	text-decoration: none;
+    	font-weight: 400;
+    	font-size: 15px;
+    	padding: 10px;
+    	font-family:"HelveticaNeue","HelveticaNeue", Helvetica, Arial, sans-serif;
+    	text-transform: uppercase;
+    	letter-spacing: 1px;
+    }
+
+     #menu ul li{
+     	position: relative;
+     	float: left;
+     	margin: 0;
+     	padding: 15px 65px;
+     }
+
+     #menu ul li:hover {
+      background: #5b78a7;
+     }
+
+     #menu ul ul{
+     	display: none;
+     	position: absolute;;
+     	top: 100%;
+     	left: 0;
+     	background: #eee;
+     	padding: 0; 
+     }
+
+     #menu ul ul li{
+     	float: none;
+     	width: 110px;
+     }
+
+     #menu ul ul a{
+     	line-height: 12%;
+     	padding: 0;
+     }
+
+     #menu ul li:hover> ul {
+     	display: block;
+     }
+
+
+     .floating-element 
+     {
+  		/*fixed posicion no definida flotante en la pagina*/
+  		position: fixed;
+  		bottom: 0;
+  		right: 0;
+  		margin: 20px;
+  		background-color: red;
+  		padding: 20px;
+  		border: 2px solid #334FFF;
+  		border-radius: 5px;
+
+  	}
+
+       /*coloca colocar dimension de video e imagenes en la pantalla*/
+       @media only screen and (max-width: 768px)
+       {
+       .floating.element{
+        position: static;
+        margin: 0;
+       }
+</html>
